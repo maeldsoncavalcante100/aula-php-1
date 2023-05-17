@@ -94,7 +94,7 @@ $total = count($vegetais);
 for($i=0;$i<$total;$i++){
     echo 'Hoje vou cozinhar' . $vegetais[$i] . '<br />';
 }*/
-$vegetais = array(
+/*$vegetais = array(
     'jerimum' => 'https://cdn-icons-png.flaticon.com/512/3768/3768530.png',
     'batata' => 'https://cdn-icons-png.flaticon.com/512/135/135445.png',
     'tomate' => 'https://cdn-icons-png.flaticon.com/512/1202/1202125.png'    
@@ -103,6 +103,41 @@ $vegetais = array(
 foreach($vegetais as $chave=>$valor){
     echo 'Hoje vou cozinhar ' . $chave . 
          "<img scr=\"$valor\" /><br />";
-}
+}*/
+
+/*$estoqueCarros = array(
+    array('Palio', 10,125),
+    array('Gol', 15,200),
+    array('Civic',4,38)
+);
+
+echo 'Temos:' . $estoqueCarros[1][1] . '' . $estoqueCarros[1][0] . '<br />Vendidos:' . $estoqueCarros[1][2];
+
+print_r($_GET)*/
+
 
 ?>
+
+
+<html>
+<body>
+
+<?php
+  date_default_timezone_set('America/Recife');
+  $data = date('d/m/Y -');
+  $hora = date('H');
+  echo $data;
+  echo $hora;
+  if($hora<12){
+    $mensagem = "Bom dia!";
+  }elseif(date('H') > 11 && date('H') < 18){
+    $mensagem = "Boa tarde!";
+    $mensagem .= 'Aceita um chá gelado?';
+  }elseif(date("H") > 17){
+    $mensagem = "Boa Noite!";
+  }
+  /*phpinfo();*/
+?>
+Olá <?php echo $mensagem; ?>
+</body>
+</html>
