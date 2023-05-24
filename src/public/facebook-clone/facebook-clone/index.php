@@ -475,6 +475,10 @@
                 </div>
               </div>
               <div class="mt-4 w-full h-full">
+              <?php
+                  include('array.php');
+                  foreach ($posts as $post) {}
+              ?>
                 <div class="w-full shadow h-auto bg-white my-2 rounded-md">
                   <div class="flex items-center space-x-2 p-2.5 px-4">
                     <div class="w-10 h-10">
@@ -563,6 +567,7 @@
                   </div>
                 </div>
                 <div class="w-full shadow h-auto bg-white my-2 rounded-md">
+                  
                   <div class="flex items-center space-x-2 p-2.5 px-4">
                     <div class="w-10 h-10">
                       <img
@@ -653,10 +658,7 @@
                     </div>
                   </div>
                 </div>
-                <?<php>
-                  include{posts.php};
-                  foreach
-                </php>
+                
                 <div class="w-full shadow h-auto bg-white my-2 rounded-md">
                   <div class="flex items-center space-x-2 p-2.5 px-4">
                     <div class="w-10 h-10">
