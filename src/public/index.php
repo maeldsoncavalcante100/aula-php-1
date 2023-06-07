@@ -239,6 +239,7 @@ print_r($_GET)
 
         </form> --> 
         <?php
+          <input type="hidden" name="">
          /*   if(empty($_GET['nome'])){
                 echo 'Nome é um campo obrigatório.';
             }else{
@@ -259,6 +260,7 @@ print_r($_GET)
             echo $data;
             echo $hora;
             */
+            /*
             function oi(){
                 echo 'Olá, tudo bem?';
             }
@@ -279,6 +281,7 @@ print_r($_GET)
             echo $a;
 
         ?>
+        */
        <!-- Olá <?php echo $mensagem; ?>-->
 
        
