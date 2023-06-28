@@ -1,5 +1,5 @@
 <?php
-
+/*
 class car {
 
     // Atributos
@@ -23,6 +23,7 @@ class car {
         echo "O carro acelera\n ";
     }
 }
+*/
 /*
 $car1 = new Car();
 $car2 = new Car();
@@ -43,7 +44,7 @@ echo $car2->marca; // Saída: Volkswagen
 $car1->desligar();
 $car2->acelerar();
 */
-
+/*
 class Pessoa {
     public $nome = "";
     public $idade = "";
@@ -52,8 +53,9 @@ class Pessoa {
     function __construct() {
         echo 'Um objeto foi criado <br />';
     }
+    
     */
-
+/*
     function perfil() {
         echo 'Eu sou' . $this->nome . '<br />';
         echo 'Eu tenho' . $this->idade . 'anos de idade.<br />';
@@ -67,3 +69,30 @@ $p1->nome = 'Maria';
 $p1->idade = 22;
 $p1->perfil();
 $p2 = new Pessoa();
+*/
+
+class FarenheitToCelsius {
+    private $temperatura;
+
+    // Método construtor.
+    function __construct($temp) {
+        $this->setTemperatura($temp);
+    }
+
+    // Método para exibir a temperatura
+    function getTemperatura() {
+        return 5.0 / 9.0 * ($this->Temperatura - 32.0);
+    }
+
+    // Método para atribuir a temperatura
+    function setTemperatura($temp) {
+        if ($temp >= -459.67) {
+            $this->Temperatura = $temp;
+        }
+        else {
+            throw new Exception("Não existe temperatura inferior a -459.67");
+        }
+    }
+}
+$x = new FarenheitToCelsius(-500);
+echo $x->getTemperatura() . ' <br /> ';
